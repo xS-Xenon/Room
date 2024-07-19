@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  cursor: grab;
+}
+
+nav {
+  color: white;
+  z-index: 2;
+  position: relative;
+  padding: 4rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav > div > img {
+  width: 50px;
+  height: 50px;
+}
+
+nav > div > a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+ul > li {
+  padding: 4px 10px;
+  border-radius: 2rem;
+  background-color: white;
+  transition: 0.2s transform ease-in-out;
+}
+
+ul > li:hover {
+  transform: translateY(-0.3rem);
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.title {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  font-size: 3rem;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, 75%);
+}
